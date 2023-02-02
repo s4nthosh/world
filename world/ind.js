@@ -7,7 +7,9 @@ timeline
  .to(".bg-right",3,{y: -80},"-=3")
  .to(".bg-hum",3,{y:-150},"-=3")
  .fromTo(".bg",3,{y:-50},{y:0 ,duration:3},"-=3" )   
- .to(".Places",3,{top:"0%"},"-=3");
+ .to(".Places",3,{top:"0%"},"-=3")
+ .fromTo(".con img",{opacity:0},{opacity:1 ,duration:3})
+ .fromTo(".content ",{opacity:0},{opacity:1 ,duration:3})
 
 
  let scene = new ScrollMagic.Scene({
