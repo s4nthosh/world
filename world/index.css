@@ -78,6 +78,13 @@ li ,a{
         height: 3px;
         background: white;
         margin: 5px;
+        
+    }
+    .line:nth-child(1){
+        color: aliceblue;
+        font-size: 10px;
+        width: 0;
+        height: 10px;
     }
     .nav{
         position: relative;
@@ -93,7 +100,7 @@ li ,a{
     }
     .nav-links{
         position: fixed;
-        background-color:blue;
+        background-color:rgb(119, 0, 255);
         height: 100vh;
         align-items: center;
         width: 100%;
