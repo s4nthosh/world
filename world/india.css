@@ -28,6 +28,16 @@ html{
     transform: translate(-50%,-40%);
     z-index: 1;
 }
+.sub{
+    position: absolute;
+    color: white;
+    font-size: 8rem;
+    text-transform: capitalize;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    z-index: 1;
+}
 
 nav{
     position: absolute;
@@ -138,10 +148,14 @@ li a{
  }
  .con{
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+ }
+ .sub{
+    font-size: 2rem;
  }   
 
 }
