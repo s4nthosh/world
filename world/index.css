@@ -11,27 +11,28 @@ body{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
-nav{
+
+.nav-links{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
-    height: 100vh;
+    align-items: flex-end;
+    height: 100%;
+    list-style: none;
     width: 100%;
     z-index: 1;
     text-transform: capitalize;
 }
-ul{
-    padding: 10px;
-    list-style: none;
-}
 li ,a{
     text-align: center;
+
     text-decoration: none;
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
-    padding: 25px 10px;
+    padding: 5px 10px;
+    margin: 15px 0;
 }
 .intro{
     background-color: black;
@@ -69,4 +70,41 @@ li ,a{
     left: 0;
     transform: translateY(100%);
     z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    .nav{
+        position: relative;
+    }
+    
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 5%;
+        transform: translate(-5%,-5%);
+        z-index: 2;
+    }
+    .nav-links{
+        position: fixed;
+        background-color:blue;
+        height: 100vh;
+        align-items: center;
+        width: 100%;
+        clip-path: circle(100px at 90% -15%);
+        -webkit-clip-path:circle(100px at 90% -15%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path:circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
 }
