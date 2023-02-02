@@ -104,14 +104,14 @@ li ,a{
         height: 100vh;
         align-items: center;
         width: 100%;
-        clip-path: circle(100px at 90% -15%);
-        -webkit-clip-path:circle(100px at 90% -15%);
+        clip-path: circle(100px at 90% -25%);
+        -webkit-clip-path:circle(100px at 90% -25%);
         transition: all 1s ease-out;
         pointer-events: none;
     }
     .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path:circle(1000px at 90% -10%);
+        clip-path: circle(1000px at 90% -20%);
+        -webkit-clip-path:circle(1000px at 90% -25%);
         pointer-events: all;
     }
 }
